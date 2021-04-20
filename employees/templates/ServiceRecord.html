@@ -1,0 +1,100 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SERVICE RECORD</title>
+
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href=" {% static 'website/css/bootstrap.min.css'%}">
+  <script src="{% static 'website/js/bootstrap.min.js'%}">
+  </script>
+    
+  </head>
+  
+  <body>
+    <hr>
+    <div class = "text-center">
+        <h1>SERVICE RECORD</h1>
+      </div>
+      <hr>
+      <br>
+      <div class="container">
+    <div class="testbox">
+      <form action="/">
+        <h3>Name: &nbsp; {{employee.fname}} &nbsp; {{employee.midname}} &nbsp; {{employee.lname}}</h3>
+        <small>__________________________________________________________________________________</small><br>
+        <small> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FIRST NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  MIDDLE NAME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    LAST NAME  </small>
+        <div>
+          <br>
+          
+          
+          <h5>Maiden Name: &nbsp; &nbsp; &nbsp; </h5>
+        <small>__________________________________________________________________________________</small>
+        <medium>&nbsp;&nbsp;(If married woman, give also maiden name)</medium>
+        <br>
+        <h4>Birthdate: {{employee.birthDate}} &nbsp; </h4>
+        <medium>(Date herein should be checked from birth certificate or other reliable documents)</medium>
+        <br>
+        <br>
+        <br>
+
+        <medium> This is to certify that employee named herein above actually rendered services in this
+        Office as shown by the Service Record below each line which is supported by appointment
+        and other papers actually issued by this Office and approved by the authorities.</medium>
+<br>
+<br>
+  <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">SERVICE (Inclusive)</th>
+      <th scope="col">Designation</th>
+      <th scope="col">Status</th>
+      <th scope="col">Salary</th>
+      <th scope="col">Place of Assignment</th>
+      <th scope="col">Separation Cause</th>
+    </tr>
+  </thead>
+  <br>
+  <tbody>
+    <tr>
+      <th scope="row"></a> {{employee.startDateOfEmployment}}&nbsp; up to present</th>
+      <td> &nbsp;&nbsp;&nbsp;{{employee.position}}</td>
+      <td> &nbsp;&nbsp;&nbsp;{{employee.employmentStatus}}</td>
+      <td> &nbsp;&nbsp;&nbsp;{{employee.monthly_rate}}</td>
+      <td> &nbsp;&nbsp;&nbsp;{{employee.officeAssignment}}</td>
+      <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;None</td>
+      
+    </tr>
+   
+  </tbody>
+ 
+</table>
+<br>
+<br>
+<medium> Issued in compliance with the Executive Order No. 54 dated August 10, 1954. and in accordance with Circular No. 58, dated August 10, 1954 of the system.</medium>
+<br>
+<br>
+<br>
+<br>
+<h5>CERTIFIED CORRECT:</h5>
+<br>
+<br>
+<h5>CELSA DEL ROSARIO</h5>
+<large class= "text-strong"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;HRMO III</large>
+<br>
+<br>
+<br>
+
+<medium>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;April 20, 2021</medium><br>
+<medium>____________________</medium><br>
+<medium>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Date Issued</medium>
+
+<hr>
+       
+       
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
